@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(90deg,
+            rgba(48, 16, 255, 1) 0%,
+            rgba(100, 115, 255, 1) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.container {
+    margin: 50px 350px;
+    border: 2px solid rgb(247, 7, 7);
+    background: linear-gradient(90deg,
+            rgba(93, 12, 255, 1) 0%,
+            rgba(155, 0, 250, 1) 100%);
+    border-radius: 20px;
+
+}
+
+@media only screen and (max-width: 925px) {
+    .container {
+        margin: 50px 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        margin: 50px 20px;
+    }
+}
+
+@media only screen and (max-width: 419px) {
+    .container {
+        margin: 50px 10px;
+    }
+
+    .todo-input {
+        width: 150px;
+    }
+
+    .todo-row {
+        width: 150px;
+    }
+}
+
+.h1style {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-items {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 20px;
+    border: 2px solid #ddd2f4;
+    width: 240px;
+    background: transparent;
+    color: #fff;
+}
+
+.todo-input::placeholder {
+    color: #f5f1f1;
+    font-weight: bolder;
+}
+
+
+.btn {
+    margin: 2px;
+    padding: 10px 22px;
+    border: 2px solid rgb(94, 115, 232);
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg,
+            rgb(237, 71, 6) 0%,
+            rgb(250, 229, 0) 100%);
+}
+
+.btn-right {
+    float: right;
+}
+
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    color: #fff;
+    background: linear-gradient(90deg,
+            rgba(255, 118, 20, 1) 0%,
+            rgba(255, 84, 17, 1) 100%);
+
+    padding: 16px;
+    border-radius: 5px;
+    width: 320px;
+}
+
+.task,
+.all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
